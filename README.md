@@ -1,32 +1,50 @@
-# React + TypeScript + Vite
+# Sameeksha S. | Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+An editorial-style portfolio website for Sameeksha S., a Computer Science & Design undergraduate. Built with React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Framework:** React 19 + TypeScript
+- **Bundler:** Vite
+- **Styling:** Tailwind CSS v4
+- **Animation:** Motion (motion.dev)
+- **Smooth Scrolling:** Lenis
+- **3D/WebGL:** OGL
+- **Linting:** Oxlint
 
-## React Compiler
+## Pages
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Landing — Hero section with avatar, rotating subtitles, perspective grid background
+2. About Me — Introduction, info cards, statistics with FaultyTerminal background
+3. Experience — Timeline (coming soon)
+4. Projects — Showcase (coming soon)
+5. Let's Build Something Together — Contact (coming soon)
 
-## Expanding the Oxlint configuration
+## Features
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- Boot sequence animation on load
+- Smooth scroll transitions between pages
+- Interactive avatar with subtle cursor-follow
+- Retro terminal background effect
+- Responsive editorial layout with large typography
+- Accessibility: AA contrast, prefers-reduced-motion, keyboard navigation
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Getting Started
+
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Scripts
+
+| Command           | Description                |
+| ----------------- | -------------------------- |
+| `npm run dev`     | Start development server   |
+| `npm run build`   | Type-check and build       |
+| `npm run preview` | Preview production build   |
+| `npm run lint`    | Run Oxlint                 |
+
+## Agent Skills
+
+This project includes installed agent skills under `.agents/skills/` and `agent/skills/` for AI-assisted development workflows including frontend design, React best practices, Tailwind design systems, code review, and more.
