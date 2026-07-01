@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { Avatar } from '../../components/avatar/Avatar';
+import avatarImg from '../../assets/avatar.png';
 import { ANIMATION, Z_INDEX } from '../../lib/designTokens';
 import { ArrowDownIcon } from '../../components/ui/icons';
 
@@ -108,7 +109,7 @@ export const Landing = () => {
           transition={{ duration: ANIMATION.DURATION.SLOW, ease: ANIMATION.EASE.DEFAULT, delay: 0.2 }}
           className="flex-1 flex justify-center md:justify-end items-center w-full mt-12 md:mt-0"
         >
-          <Avatar />
+          <Avatar imageSrc={avatarImg} />
         </motion.div>
       </div>
 
